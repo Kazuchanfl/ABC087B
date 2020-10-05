@@ -11,8 +11,11 @@ func main() {
 	w := bufio.NewWriter(os.Stdout)
 	defer w.Flush()
 
-	var input string
+	var a, b, c, x int
 
-	fmt.Fscan(r, &input)
-	fmt.Fprintf(w, "Hello, %s!", input)
+	fmt.Fscan(r, &a)
+	fmt.Fscan(r, &b)
+	fmt.Fscan(r, &c)
+	fmt.Fscan(r, &x)
+	fmt.Fprintf(w, "Hello, %s!", "Kazuaki")
 }
