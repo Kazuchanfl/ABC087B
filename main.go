@@ -12,10 +12,11 @@ func main() {
 	defer w.Flush()
 
 	var a, b, c, x int
+	var result int = 0
 
 	fmt.Fscan(r, &a)
 	fmt.Fscan(r, &b)
 	fmt.Fscan(r, &c)
 	fmt.Fscan(r, &x)
-	fmt.Fprintf(w, "Hello, %s!", "Kazuaki")
+	fmt.Fprint(w, result)
 }
